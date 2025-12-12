@@ -1,0 +1,156 @@
+/* ===================================
+   Terro AI - CSS Reset
+   =================================== */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: var(--leading-normal, 1.5);
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: var(--text-base, 1rem);
+  color: var(--color-text-primary, #fff);
+  background-color: var(--color-bg-dark, #0A0A0F);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4, h5, h6,
+button, input, label {
+  line-height: var(--leading-tight, 1.2);
+}
+
+/* Balance text wrapping on headings */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* Anchor defaults */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: var(--color-primary, #00D4FF);
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Button reset */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-primary, #00D4FF);
+  color: var(--color-bg-dark, #0A0A0F);
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-primary, #00D4FF);
+  outline-offset: 3px;
+}
+
+/* Remove focus outline on mouse click, keep for keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-medium, #12121A);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border, #2E2E3E);
+  border-radius: var(--radius-full, 9999px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-border-light, #3E3E4E);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border, #2E2E3E) var(--color-bg-medium, #12121A);
+}

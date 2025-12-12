@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <!-- Geometric 3D cube/mapping symbol -->
+  <g transform="translate(5, 5)">
+    <!-- Cube faces suggesting 3D mapping -->
+    <path d="M20 10 L35 2 L35 18 L20 26 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M20 10 L5 2 L5 18 L20 26 Z" fill="#FFFFFF" opacity="0.7"/>
+    <path d="M5 2 L20 10 L35 2 L20 -6 Z" fill="#FFFFFF" opacity="0.5"/>
+    <!-- Connection nodes suggesting mapping points -->
+    <circle cx="20" cy="10" r="2" fill="#FFFFFF"/>
+    <circle cx="5" cy="2" r="1.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="35" cy="2" r="1.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="20" cy="26" r="1.5" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <!-- TERRO text -->
+  <text x="55" y="35" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="28" fill="#FFFFFF">TERRO</text>
+  <!-- AI badge -->
+  <rect x="158" y="18" width="32" height="18" rx="4" fill="#FFFFFF"/>
+  <text x="174" y="32" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="12" fill="#0A0A0F" text-anchor="middle">AI</text>
+</svg>

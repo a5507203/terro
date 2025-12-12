@@ -1,0 +1,104 @@
+Initialize execution plan v1
+
+## Session Information
+Session name: terro-website
+User Request: Build a multi-page static website for Terro AI using plain HTML/CSS/JavaScript with bold colorful visual style
+Plan Version: v1
+
+## Design Doc
+Dark theme with electric cyan (#00D4FF), vibrant purple (#8B5CF6), and hot pink (#FF3D71) accents. Glassmorphism cards, gradient text headlines, scroll animations. 5 pages: Home, About, Technology, Use-Cases, Contact. Mobile-first responsive design.
+
+## Technology Stack
+HTML5, CSS3 (custom properties, flexbox, grid), Vanilla JavaScript ES6
+
+## Tasks
+
+### Task 001
+ID: 001
+Task Detail: Create CSS foundation files (variables.css, reset.css, utilities.css) with color palette, typography, spacing scale, and utility classes.
+Depends on: None
+
+### Task 002
+ID: 002
+Task Detail: Create css/layout.css with header, footer, navigation styles, section containers, and page wrapper.
+Depends on: None
+
+### Task 003
+ID: 003
+Task Detail: Create css/components.css with buttons, cards, form elements, section headers, CTA banners, and animation classes.
+Depends on: None
+
+### Task 004
+ID: 004
+Task Detail: Create all JavaScript files (main.js, navigation.js, animations.js, contact-form.js) for interactivity.
+Depends on: None
+
+### Task 005
+ID: 005
+Task Detail: Create assets folder structure and placeholder assets (logo.svg, logo-white.svg, favicon).
+Depends on: None
+
+### Task 006
+ID: 006
+Task Detail: Create index.html (Home page) with all sections.
+Depends on: 001, 002, 003
+
+### Task 007
+ID: 007
+Task Detail: Create about.html (About page) with all sections.
+Depends on: 001, 002, 003
+
+### Task 008
+ID: 008
+Task Detail: Create technology.html (Technology page) with all sections.
+Depends on: 001, 002, 003
+
+### Task 009
+ID: 009
+Task Detail: Create use-cases.html (Use Cases page) with all sections.
+Depends on: 001, 002, 003
+
+### Task 010
+ID: 010
+Task Detail: Create contact.html (Contact page) with form and all sections.
+Depends on: 001, 002, 003
+
+### Task 011
+ID: 011
+Task Detail: Create css/pages/home.css with hero animations and page-specific styles.
+Depends on: 006
+
+### Task 012
+ID: 012
+Task Detail: Create css/pages/about.css with team/timeline styles.
+Depends on: 007
+
+### Task 013
+ID: 013
+Task Detail: Create css/pages/technology.css with feature grid styles.
+Depends on: 008
+
+### Task 014
+ID: 014
+Task Detail: Create css/pages/use-cases.css with industry card styles.
+Depends on: 009
+
+### Task 015
+ID: 015
+Task Detail: Create css/pages/contact.css with form/FAQ styles.
+Depends on: 010
+
+### Task 016
+ID: 016
+Task Detail: Integrate JavaScript with all pages and test interactivity.
+Depends on: 004, 006, 007, 008, 009, 010
+
+### Task 017
+ID: 017
+Task Detail: Responsive testing and fixes across all pages.
+Depends on: 011, 012, 013, 014, 015, 016
+
+### Task 018
+ID: 018
+Task Detail: Final polish and cross-browser testing.
+Depends on: 017

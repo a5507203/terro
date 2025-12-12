@@ -10,7 +10,11 @@
       "Bash(python -m flow_claude.scripts.parse_branch_latest_commit:*)",
       "Bash(python -m flow_claude.scripts.read_plan_metadata:*)",
       "Bash(python -m flow_claude.scripts.read_task_metadata:*)",
-      "Bash(python -m flow_claude.scripts.update_plan_branch:*)"
+      "Bash(python -m flow_claude.scripts.update_plan_branch:*)",
+      "Bash(cat:*)",
+      "Bash(python:*)",
+      "Bash(git worktree:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

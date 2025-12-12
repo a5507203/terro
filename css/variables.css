@@ -1,0 +1,140 @@
+/* ===================================
+   Terro AI - CSS Variables (Design Tokens)
+   =================================== */
+
+:root {
+  /* Primary Colors - Electric Cyan */
+  --color-primary: #00D4FF;
+  --color-primary-dark: #0099CC;
+  --color-primary-light: #66E3FF;
+  --color-primary-rgb: 0, 212, 255;
+
+  /* Secondary Colors - Vibrant Purple */
+  --color-secondary: #8B5CF6;
+  --color-secondary-dark: #6D28D9;
+  --color-secondary-light: #A78BFA;
+  --color-secondary-rgb: 139, 92, 246;
+
+  /* Accent Colors - Hot Pink/Coral */
+  --color-accent: #FF3D71;
+  --color-accent-dark: #DB2C66;
+  --color-accent-light: #FF6B9D;
+  --color-accent-rgb: 255, 61, 113;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #00D4FF 0%, #8B5CF6 50%, #FF3D71 100%);
+  --gradient-secondary: linear-gradient(135deg, #0099CC 0%, #6D28D9 100%);
+  --gradient-accent: linear-gradient(135deg, #8B5CF6 0%, #FF3D71 100%);
+  --gradient-dark: linear-gradient(180deg, #12121A 0%, #0A0A0F 100%);
+
+  /* Background Colors */
+  --color-bg-dark: #0A0A0F;
+  --color-bg-medium: #12121A;
+  --color-bg-light: #1E1E2D;
+  --color-bg-card: #1E1E2D;
+
+  /* Text Colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A0B0;
+  --color-text-muted: #6B6B7B;
+
+  /* Border Colors */
+  --color-border: #2E2E3E;
+  --color-border-light: #3E3E4E;
+
+  /* State Colors */
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+
+  /* Typography */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  /* Font Sizes - Fluid Typography */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.65vw, 1.25rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --text-4xl: clamp(2.5rem, 2rem + 3vw, 4rem);
+  --text-5xl: clamp(3rem, 2.5rem + 4vw, 5rem);
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
+  --shadow-glow-primary: 0 0 20px rgba(0, 212, 255, 0.3);
+  --shadow-glow-secondary: 0 0 20px rgba(139, 92, 246, 0.3);
+  --shadow-glow-accent: 0 0 20px rgba(255, 61, 113, 0.3);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-slower: 700ms ease;
+
+  /* Z-Index Scale */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-tooltip: 600;
+
+  /* Container */
+  --container-max: 1280px;
+  --container-padding: clamp(1rem, 5vw, 3rem);
+
+  /* Header */
+  --header-height: 80px;
+}
+
+/* Breakpoint Reference (for documentation) */
+/*
+  sm: 640px
+  md: 768px
+  lg: 1024px
+  xl: 1280px
+  2xl: 1536px
+*/
