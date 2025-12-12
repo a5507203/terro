@@ -15,7 +15,10 @@
       "Bash(python:*)",
       "Bash(git worktree:*)",
       "Bash(git checkout:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nSimplify website to single page\n\n- Remove nav and multi-page navigation\n- Add mission and vision section to homepage\n- Add values section from about page\n- Remove stats section (99.9%, 10x numbers)\n- Replace footer with simplified version containing contact form\n- Remove about, contact, technology, and use-cases pages\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
